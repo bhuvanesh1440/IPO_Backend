@@ -10,6 +10,7 @@ app = FastAPI(title="IPO OPS API")
 origins = [
     "http://localhost:5173", # <-- Allow your React/Vite frontend
     "http://127.0.0.1:5173", # <-- Sometimes browsers use 127.0.0.1 instead of localhost
+    "https://ipo-analytics.vercel.app"
 ]
 
 app.add_middleware(
