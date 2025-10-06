@@ -1,0 +1,16 @@
+# --- Core Server and ASGI ---
+# FastAPI: The web framework you are using.
+fastapi
+# Uvicorn: The ASGI server used to run FastAPI in production.
+uvicorn[standard]
+
+# --- File Handling and Data Processing ---
+# pandas: Essential for reading CSVs, data manipulation, and comparison logic.
+pandas
+# python-multipart: Required by FastAPI/Starlette to correctly parse uploaded files (FormData).
+python-multipart
+
+# --- CORS (Cross-Origin Resource Sharing) ---
+# starlette: FastAPI is built on Starlette; this package provides the CORSMiddleware.
+# It is often a dependency of FastAPI, but explicitly listing it ensures all CORS components are present.
+starlette
